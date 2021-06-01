@@ -4,7 +4,6 @@ import grammar.verb as verb
 
 def analyze(sentence):
     tokens = sentence.lower().split()
-    print(tokens)
     tokens.append('EOS')
 
     non_terminals = ['S', 'SB', 'VB', 'OB']

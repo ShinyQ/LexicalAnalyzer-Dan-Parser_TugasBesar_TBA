@@ -23,11 +23,11 @@ def transition_table(transition):
     transition[("q19", "r")] = "q20"
 
     # string "porter"
-    transition[("q21", "p")] = "q22"
-    transition[("q0", "p")] = "q22"
-    transition[("q22", "o")] = "q23"
-    transition[("q23", "r")] = "q24"
-    transition[("q24", "t")] = "q18"
+    transition[("q21", "p")] = "q4"
+    transition[("q0", "p")] = "q4"
+    transition[("q4", "o")] = "q22"
+    transition[("q22", "r")] = "q23"
+    transition[("q23", "t")] = "q18"
     transition[("q18", "e")] = "q19"
     transition[("q19", "r")] = "q20"
 

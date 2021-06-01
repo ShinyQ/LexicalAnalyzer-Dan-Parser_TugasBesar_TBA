@@ -5,6 +5,7 @@ import grammar.object as object
 import grammar.verb as verb
 
 def analyze(input_string):
+    input_string = input_string.lower() + "#"
 
     # Inisialisasi State [q0, q1 ...]
     state_list = []; list(state_list.append(f'q{i}') for i in range(32))
@@ -29,7 +30,8 @@ def analyze(input_string):
 
     transition_table[("q21", "#")] = "ACCEPT"
     transition_table[("q21", " ")] = "q21"
-
+    
+    # Initialize State
     transition_table = subject.transition_table(transition_table)
     transition_table = object.transition_table(transition_table)
     transition_table = verb.transition_table(transition_table)
@@ -57,6 +59,6 @@ def analyze(input_string):
 
     # Conclusion
     if state == "ACCEPT":
-        print("\nsemua token yang di input: {} valid".format(input_string))
+        print(f'\nsemua token yang di input: {input_string} valid\n')
 
     return state == "ACCEPT"

@@ -24,16 +24,15 @@ print("""\
 """)
 
 kalimat = input("Masukkan Kalimat / Kata Yang Ingin Diperiksa: ")
-input_string = kalimat.lower() + "#"
 
 print("""\
 ----------------------------------
     Proses Lexical Analyzer
 ----------------------------------""")
-is_valid = lexical.analyze(input_string)
+is_valid = lexical.analyze(kalimat)
 
 print("""\
-\n----------------------------------
+----------------------------------
           Proses Parser
 ----------------------------------""")
 if is_valid:

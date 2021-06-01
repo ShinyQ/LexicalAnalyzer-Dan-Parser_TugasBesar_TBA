@@ -5,24 +5,25 @@ def transition_table(transition):
     transition[("q2", "o")] = "q3"
     transition[("q3", "i")] = "q20"
 
-    # string "merè"
+    # string "mère"
     transition[("q21", "m")] = "q2"
     transition[("q0", "m")] = "q2"
     transition[("q2", "è")] = "q10"
     transition[("q10", "r")] = "q11"
     transition[("q11", "e")] = "q20"
 
-    # string "perè"
+    # string "père"
     transition[("q21", "p")] = "q4"
     transition[("q0", "p")] = "q4"
     transition[("q4", "è")] = "q10"
     transition[("q10", "r")] = "q11"
     transition[("q11", "e")] = "q20"
 
-    # string “il”
+    # string "il"
     transition[("q21", "i")] = "q1"
     transition[("q0", "i")] = "q1"
     transition[("q1", "l")] = "q20"
+
 
     return transition
 
