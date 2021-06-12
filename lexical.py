@@ -8,7 +8,7 @@ def analyze(input_string):
     input_string = input_string.lower() + "#"
 
     # Inisialisasi State [q0, q1 ...]
-    state_list = []; list(state_list.append(f'q{i}') for i in range(32))
+    state_list = []; list(state_list.append(f'q{i}') for i in range(36))
 
     # Inisialisasi Seluruh State Menjadi ERROR
     transition_table = defaultdict(lambda: "ERROR", {})

@@ -1,5 +1,5 @@
 import lexical
-import gr_parser
+import parse
 
 words = [
     'moi', 'mère', 'père', 'il', 'conduire', 'affleurer',
@@ -16,4 +16,4 @@ object = ['voiture', 'plante', 'bague']
 for x in subject:
     for y in verb: 
         for z in object:
-            gr_parser.analyze(f'{x} {y} {z}')
+            parse.analyze(f'{x} {y} {z}')

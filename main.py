@@ -1,4 +1,5 @@
-import lexical, gr_parser
+import lexical
+import parse
 
 print("""\
 -----------------------------------------------------------------------
@@ -36,6 +37,6 @@ print("""\
           Proses Parser
 ----------------------------------""")
 if is_valid:
-   gr_parser.analyze(kalimat)
+   parse.analyze(kalimat)
 else :
    print(f'Input string {kalimat}, tidak diterima, tidak ada pada Grammar')
